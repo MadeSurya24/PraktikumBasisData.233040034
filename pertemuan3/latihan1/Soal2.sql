@@ -1,6 +1,6 @@
 SELECT
 	C.custid,
-	COUNT(O.orderid) AS numorders,
+	COUNT(DISTINCT O.orderid) AS numorders,
 	SUM(OD.qty) AS totalqty
 FROM
 	Sales.Customers C 
