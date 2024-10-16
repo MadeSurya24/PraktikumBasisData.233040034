@@ -1,0 +1,3 @@
+SELECT dosen_pengajar count
+FROM jadwal_mata_kuliah
+GROUP BY dosen_pengajar
